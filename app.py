@@ -8,10 +8,8 @@ from nltk.tokenize import word_tokenize
 nltk.download('punkt')
 nltk.download('stopwords')
 
-
 # Load a pre-trained Hugging Face model
-chatbot = pipeline("text-generation", model="distilgpt2")
-
+chatbot = pipeline("text-generation", model="gpt2-medium")
 
 # Define healthcare-specific response logic (or use a model to generate responses)
 def healthcare_chatbot(user_input):
@@ -25,10 +23,7 @@ def healthcare_chatbot(user_input):
     else:
         # For other inputs, use the Hugging Face model to generate a response
         response = chatbot(user_input, max_length=300, num_return_sequences=1)
-        # Specifies the maximum length of the generated text response, including the input and the generated tokens.
-        # If set to 3, the model generates three different possible responses based on the input.
         return response[0]['generated_text']
-
 
 # Streamlit web app interface
 def main():
