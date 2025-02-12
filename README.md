@@ -1,6 +1,6 @@
 # AI Health Assistant
 
-An AI-powered Health Assistant that uses the DistilGPT-2 model to provide health-related suggestions and information. The application is built using Python and Streamlit for an interactive user experience.
+An AI-powered Health Assistant that uses the gpt2-medium model to provide health-related suggestions and information. The application is built using Python and Streamlit for an interactive user experience.
 
 ## Features
 - AI-driven responses for health-related queries.
@@ -45,7 +45,7 @@ streamlit run app.py
 ## Technologies Used
 - Python
 - Streamlit
-- Transformers (DistilGPT-2)
+- Transformers (gpt2-medium)
 - Hugging Face API
 
 ## Contributing
