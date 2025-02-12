@@ -4,7 +4,7 @@ An AI-powered Health Assistant that uses the gpt2-medium model to provide health
 
 ## Features
 - AI-driven responses for health-related queries.
-- Lightweight and efficient with the DistilGPT-2 model.
+- Lightweight and efficient with the gpt2-medium model.
 - Interactive user interface built with Streamlit.
 
 ## Installation
